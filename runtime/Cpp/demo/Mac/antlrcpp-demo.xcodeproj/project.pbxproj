@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		270925AC1CDB427200522D32 /* libantlr4-runtime.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 270925A71CDB409400522D32 /* libantlr4-runtime.dylib */; };
 		270925AF1CDB428A00522D32 /* libantlr4-runtime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270925A91CDB409400522D32 /* libantlr4-runtime.a */; };
-		270925B11CDB455B00522D32 /* TLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27A23EA11CC2A8D60036D8A3 /* TLexer.cpp */; };
 		2747A7131CA6C46C0030247B /* InputHandlingTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2747A7121CA6C46C0030247B /* InputHandlingTests.mm */; };
 		274FC6D91CA96B6C008D4374 /* MiscClassTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 274FC6D81CA96B6C008D4374 /* MiscClassTests.mm */; };
+		27C4E90F2581166200F1572B /* ExprCppBaseListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E9042581166100F1572B /* ExprCppBaseListener.cpp */; };
+		27C4E9102581166200F1572B /* ExprCppListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E9052581166100F1572B /* ExprCppListener.cpp */; };
+		27C4E9112581166200F1572B /* ExprCppVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E9062581166100F1572B /* ExprCppVisitor.cpp */; };
+		27C4E9122581166200F1572B /* ExprCppParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E9082581166100F1572B /* ExprCppParser.cpp */; };
+		27C4E9132581166200F1572B /* ExprCPPLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E90A2581166200F1572B /* ExprCPPLexer.cpp */; };
+		27C4E9142581166200F1572B /* ExprCppBaseVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E90E2581166200F1572B /* ExprCppBaseVisitor.cpp */; };
 		27C66A6A1C9591280021E494 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C66A691C9591280021E494 /* main.cpp */; };
-		27C6E1801C972FFC0079AF06 /* TParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E1741C972FFC0079AF06 /* TParser.cpp */; };
-		27C6E1811C972FFC0079AF06 /* TParserBaseListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E1771C972FFC0079AF06 /* TParserBaseListener.cpp */; };
-		27C6E1821C972FFC0079AF06 /* TParserBaseVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E1791C972FFC0079AF06 /* TParserBaseVisitor.cpp */; };
-		27C6E1831C972FFC0079AF06 /* TParserListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E17B1C972FFC0079AF06 /* TParserListener.cpp */; };
-		27C6E1841C972FFC0079AF06 /* TParserVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27C6E17D1C972FFC0079AF06 /* TParserVisitor.cpp */; };
 		37F1356D1B4AC02800E0CACF /* antlrcpp_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37F1356C1B4AC02800E0CACF /* antlrcpp_Tests.mm */; };
 /* End PBXBuildFile section */
 
@@ -76,22 +76,21 @@
 		2747A7121CA6C46C0030247B /* InputHandlingTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InputHandlingTests.mm; sourceTree = "<group>"; wrapsLines = 0; };
 		274FC6D81CA96B6C008D4374 /* MiscClassTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MiscClassTests.mm; sourceTree = "<group>"; wrapsLines = 0; };
 		27874F1D1CCB7A0700AF1C53 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		27A23EA11CC2A8D60036D8A3 /* TLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TLexer.cpp; path = ../generated/TLexer.cpp; sourceTree = "<group>"; wrapsLines = 0; };
-		27A23EA21CC2A8D60036D8A3 /* TLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLexer.h; path = ../generated/TLexer.h; sourceTree = "<group>"; };
+		27C4E9022581164D00F1572B /* ExprCpp.g4 */ = {isa = PBXFileReference; lastKnownFileType = text; name = ExprCpp.g4; path = ../../ExprCpp.g4; sourceTree = "<group>"; };
+		27C4E9032581166100F1572B /* ExprCppBaseVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCppBaseVisitor.h; path = ../generated/ExprCppBaseVisitor.h; sourceTree = "<group>"; };
+		27C4E9042581166100F1572B /* ExprCppBaseListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCppBaseListener.cpp; path = ../generated/ExprCppBaseListener.cpp; sourceTree = "<group>"; };
+		27C4E9052581166100F1572B /* ExprCppListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCppListener.cpp; path = ../generated/ExprCppListener.cpp; sourceTree = "<group>"; };
+		27C4E9062581166100F1572B /* ExprCppVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCppVisitor.cpp; path = ../generated/ExprCppVisitor.cpp; sourceTree = "<group>"; };
+		27C4E9072581166100F1572B /* ExprCPPLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCPPLexer.h; path = ../generated/ExprCPPLexer.h; sourceTree = "<group>"; };
+		27C4E9082581166100F1572B /* ExprCppParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCppParser.cpp; path = ../generated/ExprCppParser.cpp; sourceTree = "<group>"; };
+		27C4E9092581166200F1572B /* ExprCppVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCppVisitor.h; path = ../generated/ExprCppVisitor.h; sourceTree = "<group>"; };
+		27C4E90A2581166200F1572B /* ExprCPPLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCPPLexer.cpp; path = ../generated/ExprCPPLexer.cpp; sourceTree = "<group>"; };
+		27C4E90B2581166200F1572B /* ExprCppListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCppListener.h; path = ../generated/ExprCppListener.h; sourceTree = "<group>"; };
+		27C4E90C2581166200F1572B /* ExprCppParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCppParser.h; path = ../generated/ExprCppParser.h; sourceTree = "<group>"; };
+		27C4E90D2581166200F1572B /* ExprCppBaseListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExprCppBaseListener.h; path = ../generated/ExprCppBaseListener.h; sourceTree = "<group>"; };
+		27C4E90E2581166200F1572B /* ExprCppBaseVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExprCppBaseVisitor.cpp; path = ../generated/ExprCppBaseVisitor.cpp; sourceTree = "<group>"; };
 		27C66A671C9591280021E494 /* antlr4-cpp-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "antlr4-cpp-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C66A691C9591280021E494 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; wrapsLines = 0; };
-		27C66A731C9592400021E494 /* TLexer.g4 */ = {isa = PBXFileReference; lastKnownFileType = text; name = TLexer.g4; path = ../../TLexer.g4; sourceTree = "<group>"; };
-		27C66A741C9592400021E494 /* TParser.g4 */ = {isa = PBXFileReference; lastKnownFileType = text; name = TParser.g4; path = ../../TParser.g4; sourceTree = "<group>"; };
-		27C6E1741C972FFC0079AF06 /* TParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TParser.cpp; path = ../generated/TParser.cpp; sourceTree = "<group>"; wrapsLines = 0; };
-		27C6E1751C972FFC0079AF06 /* TParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TParser.h; path = ../generated/TParser.h; sourceTree = "<group>"; wrapsLines = 0; };
-		27C6E1771C972FFC0079AF06 /* TParserBaseListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TParserBaseListener.cpp; path = ../generated/TParserBaseListener.cpp; sourceTree = "<group>"; };
-		27C6E1781C972FFC0079AF06 /* TParserBaseListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TParserBaseListener.h; path = ../generated/TParserBaseListener.h; sourceTree = "<group>"; };
-		27C6E1791C972FFC0079AF06 /* TParserBaseVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TParserBaseVisitor.cpp; path = ../generated/TParserBaseVisitor.cpp; sourceTree = "<group>"; };
-		27C6E17B1C972FFC0079AF06 /* TParserListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TParserListener.cpp; path = ../generated/TParserListener.cpp; sourceTree = "<group>"; };
-		27C6E17C1C972FFC0079AF06 /* TParserListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TParserListener.h; path = ../generated/TParserListener.h; sourceTree = "<group>"; };
-		27C6E17D1C972FFC0079AF06 /* TParserVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TParserVisitor.cpp; path = ../generated/TParserVisitor.cpp; sourceTree = "<group>"; };
-		27C6E1851C97322F0079AF06 /* TParserBaseVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TParserBaseVisitor.h; path = ../generated/TParserBaseVisitor.h; sourceTree = "<group>"; wrapsLines = 0; };
-		27C6E1861C97322F0079AF06 /* TParserVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TParserVisitor.h; path = ../generated/TParserVisitor.h; sourceTree = "<group>"; };
 		37F135681B4AC02800E0CACF /* antlrcpp Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "antlrcpp Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F1356B1B4AC02800E0CACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F1356C1B4AC02800E0CACF /* antlrcpp_Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = antlrcpp_Tests.mm; sourceTree = "<group>"; };
@@ -138,18 +137,18 @@
 		27C66A5C1C958EB50021E494 /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				27A23EA11CC2A8D60036D8A3 /* TLexer.cpp */,
-				27A23EA21CC2A8D60036D8A3 /* TLexer.h */,
-				27C6E1741C972FFC0079AF06 /* TParser.cpp */,
-				27C6E1751C972FFC0079AF06 /* TParser.h */,
-				27C6E1771C972FFC0079AF06 /* TParserBaseListener.cpp */,
-				27C6E1781C972FFC0079AF06 /* TParserBaseListener.h */,
-				27C6E1791C972FFC0079AF06 /* TParserBaseVisitor.cpp */,
-				27C6E1851C97322F0079AF06 /* TParserBaseVisitor.h */,
-				27C6E17B1C972FFC0079AF06 /* TParserListener.cpp */,
-				27C6E17C1C972FFC0079AF06 /* TParserListener.h */,
-				27C6E17D1C972FFC0079AF06 /* TParserVisitor.cpp */,
-				27C6E1861C97322F0079AF06 /* TParserVisitor.h */,
+				27C4E9042581166100F1572B /* ExprCppBaseListener.cpp */,
+				27C4E90D2581166200F1572B /* ExprCppBaseListener.h */,
+				27C4E90E2581166200F1572B /* ExprCppBaseVisitor.cpp */,
+				27C4E9032581166100F1572B /* ExprCppBaseVisitor.h */,
+				27C4E90A2581166200F1572B /* ExprCPPLexer.cpp */,
+				27C4E9072581166100F1572B /* ExprCPPLexer.h */,
+				27C4E9052581166100F1572B /* ExprCppListener.cpp */,
+				27C4E90B2581166200F1572B /* ExprCppListener.h */,
+				27C4E9082581166100F1572B /* ExprCppParser.cpp */,
+				27C4E90C2581166200F1572B /* ExprCppParser.h */,
+				27C4E9062581166100F1572B /* ExprCppVisitor.cpp */,
+				27C4E9092581166200F1572B /* ExprCppVisitor.h */,
 			);
 			name = generated;
 			sourceTree = "<group>";
@@ -158,8 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				27C66A691C9591280021E494 /* main.cpp */,
-				27C66A731C9592400021E494 /* TLexer.g4 */,
-				27C66A741C9592400021E494 /* TParser.g4 */,
+				27C4E9022581164D00F1572B /* ExprCpp.g4 */,
 			);
 			path = "antlr4-cpp-demo";
 			sourceTree = "<group>";
@@ -174,7 +172,9 @@
 				27874F221CCBB34200AF1C53 /* Linked Frameworks */,
 				37D727AB1867AF1E007B6D10 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		37D727AB1867AF1E007B6D10 /* Products */ = {
 			isa = PBXGroup;
@@ -266,6 +266,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 37D727A11867AF1E007B6D10;
@@ -343,12 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27C66A6A1C9591280021E494 /* main.cpp in Sources */,
-				27C6E1821C972FFC0079AF06 /* TParserBaseVisitor.cpp in Sources */,
-				270925B11CDB455B00522D32 /* TLexer.cpp in Sources */,
-				27C6E1831C972FFC0079AF06 /* TParserListener.cpp in Sources */,
-				27C6E1811C972FFC0079AF06 /* TParserBaseListener.cpp in Sources */,
-				27C6E1841C972FFC0079AF06 /* TParserVisitor.cpp in Sources */,
-				27C6E1801C972FFC0079AF06 /* TParser.cpp in Sources */,
+				27C4E9132581166200F1572B /* ExprCPPLexer.cpp in Sources */,
+				27C4E9112581166200F1572B /* ExprCppVisitor.cpp in Sources */,
+				27C4E90F2581166200F1572B /* ExprCppBaseListener.cpp in Sources */,
+				27C4E9122581166200F1572B /* ExprCppParser.cpp in Sources */,
+				27C4E9142581166200F1572B /* ExprCppBaseVisitor.cpp in Sources */,
+				27C4E9102581166200F1572B /* ExprCppListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

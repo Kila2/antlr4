@@ -1659,7 +1659,9 @@
 				37D727AB1867AF1E007B6D10 /* Products */,
 				276E5C0A1CDB57AA003FF4B4 /* runtime */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		37D727AB1867AF1E007B6D10 /* Products */ = {
 			isa = PBXGroup;
@@ -2889,7 +2891,11 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "src/ thirdparty/utfcpp/source/ thirdparty/utfcpp/source/utf8/";
+				HEADER_SEARCH_PATHS = (
+					src/,
+					thirdparty/utfcpp/source/,
+					thirdparty/utfcpp/source/utf8/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -2945,7 +2951,11 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "src/ thirdparty/utfcpp/source/ thirdparty/utfcpp/source/utf8/";
+				HEADER_SEARCH_PATHS = (
+					src/,
+					thirdparty/utfcpp/source/,
+					thirdparty/utfcpp/source/utf8/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};

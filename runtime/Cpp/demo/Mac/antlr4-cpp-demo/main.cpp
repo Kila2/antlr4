@@ -13,15 +13,15 @@
 #include <iostream>
 
 #include "antlr4-runtime.h"
-#include "TLexer.h"
-#include "TParser.h"
+#include "ExprCppLexer.h"
+#include "ExprCppParser.h"
 
 using namespace antlrcpptest;
 using namespace antlr4;
 
 int main(int , const char **) {
   ANTLRInputStream input(u8"🍴 = 🍐 + \"😎\";(((x * π))) * µ + ∰; a + (x * (y ? 0 : 1) + z);");
-  TLexer lexer(&input);
+  ExprCppLexer lexer(&input);
   CommonTokenStream tokens(&lexer);
 
   tokens.fill();
@@ -29,8 +29,8 @@ int main(int , const char **) {
     std::cout << token->toString() << std::endl;
   }
 
-  TParser parser(&tokens);
-  tree::ParseTree *tree = parser.main();
+  ExprCppParser parser(&tokens);
+  tree::ParseTree *tree = parser.prog();
 
   std::cout << tree->toStringTree(&parser) << std::endl;
 
